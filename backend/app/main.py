@@ -1,7 +1,6 @@
 import os
 import certifi
 
-# Set the SSL_CERT_FILE environment variable to the certifi CA bundle
 os.environ["SSL_CERT_FILE"] = certifi.where()
 
 from fastapi import FastAPI
